@@ -663,7 +663,7 @@ int init_networks() {
 
     pthread_mutex_init(&actual_model_mutex, NULL);
 
-    return SUCCESS;
+    return NN_SUCCESS;
 };
 
 /**

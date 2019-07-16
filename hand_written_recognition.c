@@ -416,17 +416,17 @@ void nn_error(int return_value) {
     int error = 0;
 
     switch (return_value) {
-    case NN_ERROR_NO_FILE:
-        fprintf(stderr, "NN_ERROR_NO_FILE ERROR - %s\n",
-                "Error opnening weigths file!");
-        error++;
-        break;
-    case NN_ERROR_READING_FILE:
-        fprintf(stderr, "NN_ERROR_READING_FILE ERROR - %s\n",
-                "Error while loading weights values from file!");
-        error++;
-        break;
-    default:
+        case NN_ERROR_NO_FILE:
+            fprintf(stderr, "NN_ERROR_NO_FILE ERROR - %s\n",
+                    "Error opnening weigths file!");
+            error++;
+            break;
+        case NN_ERROR_READING_FILE:
+            fprintf(stderr, "NN_ERROR_READING_FILE ERROR - %s\n",
+                    "Error while loading weights values from file!");
+            error++;
+            break;
+        default:
         break;
     }
 
